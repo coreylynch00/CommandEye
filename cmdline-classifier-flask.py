@@ -8,7 +8,7 @@ HTML_PAGE = """
 <!DOCTYPE html>
 <html>
 <head>
-<title>CommandEye - Suspicious Command Line Classifier</title>
+<title>CommandEye</title>
 <style>
 body {
     font-family: Consolas, monospace;
@@ -72,7 +72,7 @@ hr {
 </head>
 <body>
 
-<h1 style="color:#33ffcc;">[ CommandEye - Suspicious Command Line Classifier ]</h1>
+<h1 style="color:#33ffcc;">[ CommandEye ]</h1>
 <p style="color:#009f6f;">SOC Analyst Utility • Real-Time Command Line Detection Engine</p>
 
 <form method="POST">
