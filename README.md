@@ -2,6 +2,8 @@
 
 **SOC-style web app that detects malicious or suspicious command lines, extracts IOCs, maps threats to MITRE ATT&CK, and displays everything in a cool, matrix-like interface.**
 
+![CommandEye Screenshot](./commandeye.png)
+
 ## Features
 
 - Detects PowerShell obfuscation, encoded commands, LOLBins, downloaders, execution bypasses, persistence patterns, and more.
