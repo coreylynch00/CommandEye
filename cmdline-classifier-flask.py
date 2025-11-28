@@ -15,12 +15,12 @@ body {
     margin: 20px;
     background: #000;
     color: #00ff9f;
-    font-size: 12px;   /* smaller text */
+    font-size: 12px;   
 }
 input[type=text] {
     width: 85%;
-    padding: 6px;       /* smaller padding */
-    font-size: 12px;    /* smaller input text */
+    padding: 6px;
+    font-size: 12px;
     border-radius: 3px;
     border: 1px solid #0f6;
     background: #001a00;
@@ -28,7 +28,7 @@ input[type=text] {
 }
 button {
     padding: 6px 12px;
-    font-size: 12px;    /* smaller button */
+    font-size: 12px;
     background: #003300;
     color: #00ff9f;
     border: 1px solid #0f6;
@@ -38,7 +38,7 @@ button {
 }
 .panel {
     margin-top: 15px;
-    padding: 10px;      /* smaller panel padding */
+    padding: 10px;
     background: #001300;
     border-left: 3px solid #00ff9f;
     border-radius: 5px;
@@ -46,12 +46,12 @@ button {
 }
 .code {
     white-space: pre-wrap;
-    padding: 5px;       /* smaller code box */
+    padding: 5px;
     background: #000;
     border-radius: 3px;
     border: 1px solid #0f6;
     color: #00ffbf;
-    font-size: 12px;    /* smaller code text */
+    font-size: 12px;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -61,7 +61,7 @@ button {
     margin-left: 5px;
     padding-left: 5px;
     border-left: 2px dashed #0f6;
-    font-size: 12px;    /* smaller IOC list text */
+    font-size: 12px;
 }
 hr {
     border: none;
