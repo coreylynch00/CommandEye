@@ -40,7 +40,7 @@ pip install Flask
 Start the web app:
 
 ```
-python3 app.py
+python3 cmdline-classifier-flask.py
 ```
 
 Open your browser:
