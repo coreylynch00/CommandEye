@@ -32,12 +32,6 @@ venv\Scripts\activate      # Windows
 Install dependencies:
 
 ```
-pip install -r requirements.txt
-```
-
-If you don’t have a requirements.txt yet:
-
-```
 pip install Flask
 ```
 
