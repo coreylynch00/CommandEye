@@ -1,4 +1,4 @@
-# Suspicious Command Line Classifier
+# CommmandEye - Suspicious Command Line Classifier
 
 **SOC-style web app that detects malicious or suspicious command lines, extracts IOCs, maps threats to MITRE ATT&CK, and displays everything in a cool, matrix-like interface. Ideal for SOC analysts, incident responders, threat hunters, red teamers, and researchers.**
 
