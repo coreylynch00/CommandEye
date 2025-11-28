@@ -1,6 +1,6 @@
 # CommmandEye - Suspicious Command Line Classifier
 
-**SOC-style web app that detects malicious or suspicious command lines, extracts IOCs, maps threats to MITRE ATT&CK, and displays everything in a cool, matrix-like interface. Ideal for SOC analysts, incident responders, threat hunters, red teamers, and researchers.**
+**SOC-style web app that detects malicious or suspicious command lines, extracts IOCs, maps threats to MITRE ATT&CK, and displays everything in a cool, matrix-like interface.**
 
 ## Features
 
@@ -8,16 +8,16 @@
 - Extracts IOCs: URLs, IPs, domains.
 - Maps suspicious detections to MITRE ATT&CK techniques.
 - Clean, fast Flask web interface.
-- Matrix-themed UI designed for SOC readability.
+- Matrix-themed UI design.
 - Verbose detection summaries.
-- Very easy to extend with new patterns.
+- Easy to extend with new patterns.
 
 ## Installation
 
 Clone the repository:
 
 ```
-git clone https://github.com/yourusername/commandeye.git
+git clone https://github.com/coreylynch00/commandeye.git
 cd commandeye
 ```
 
@@ -80,4 +80,4 @@ Pull requests welcome:
 
 ## Disclaimer
 
-This tool is for education and authorized security testing only. Do not use on systems you do not own or have explicit permission to analyze.
+This tool is for fun, education and authorized security testing only.
