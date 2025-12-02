@@ -16,7 +16,7 @@ def normalize_ioc(ioc):
            .replace("{.}", ".")
            .replace("hxxp://", "http://")
            .replace("hxxps://", "https://")
-           .replace(":///", "://")  # Fix triple slash
+           .replace(":///", "://")
     )
 
 def extract_iocs(cmd):
