@@ -22,6 +22,7 @@ Detects a wide range of suspicious patterns, including:
 * **Lateral movement tools:** PsExec, SSH, WMI exec
 * **Download/remote execution:** curl, wget, certutil
 * **Suspicious execution sources:** Temp/AppData EXEs, direct cmd.exe launch
+* **...and many, many more**
 * **Process tampering & defense evasion signals**
 
 > Each detection is mapped to **MITRE ATT&CK** and a **Detection Family** for verdict logic.
