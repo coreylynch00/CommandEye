@@ -1,4 +1,4 @@
-# CommandEye — Advanced Command Line Classifier & IOC Extraction Tool
+# CommandEye — Command Line Classifier & IOC Extraction Tool
 
 **A SOC-grade web application for analyzing command lines, detecting malicious behavior, extracting IOCs, mapping activity to MITRE ATT&CK, and presenting results in a sleek, hacker-themed interface.**
 
