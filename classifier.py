@@ -1,6 +1,5 @@
-# classifier.py
 import re
-from rules import DETECTIONS  # make sure your rules.py file contains DETECTIONS
+from rules import DETECTIONS 
 
 def classify_command(cmd):
     findings = []
