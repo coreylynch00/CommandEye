@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CommandEye</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1 class="centered">[ CommandEye ]</h1>
+<p class="subtitle centered">Command Line Classifier & IOC Extraction Tool</p>
+
+<form method="POST">
+    <input type="text" name="cmdline" placeholder="Enter command line..." required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if result %}
+<hr>
+
+<div class="grid-2x2">
+    <!-- Row 1: Input Command / Detection Summary -->
+    <div class="panel">
+        <div class="section-title">INPUT COMMAND</div>
+        <div class="code">{{ input_cmd }}</div>
+    </div>
+
+    <div class="panel">
+        <div class="section-title">DETECTION SUMMARY</div>
+        <div class="code">{{ result }}</div>
+    </div>
+
+    <!-- Row 2: IOC Extraction / Verdict -->
+    <div class="panel">
+        <div class="section-title">IOC EXTRACTION</div>
+
+        <h3 class="section-title">URLs</h3>
+        <div class="ioc-grid">
+            {% if iocs.urls %}
+                {% for u in iocs.urls %}
+                    <div class="ioc-item">
+                        <span>{{ u }}</span>
+                        <button class="vt-button" onclick="window.open('https://www.virustotal.com/gui/url/{{ url_hashes[u] }}')">VT</button>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="no-iocs">No URLs detected.</div>
+            {% endif %}
+        </div>
+
+        <h3 class="section-title">IP Addresses</h3>
+        <div class="ioc-grid">
+            {% if iocs.ips %}
+                {% for ip in iocs.ips %}
+                    <div class="ioc-item">
+                        <span>{{ ip }}</span>
+                        <button class="vt-button" onclick="window.open('https://www.virustotal.com/gui/ip-address/{{ ip }}')">VT</button>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="no-iocs">No IPs detected.</div>
+            {% endif %}
+        </div>
+
+        <h3 class="section-title">Domains</h3>
+        <div class="ioc-grid">
+            {% if iocs.domains %}
+                {% for d in iocs.domains %}
+                    <div class="ioc-item">
+                        <span>{{ d }}</span>
+                        <button class="vt-button" onclick="window.open('https://www.virustotal.com/gui/domain/{{ d }}')">VT</button>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="no-iocs">No domains detected.</div>
+            {% endif %}
+        </div>
+
+        <h3 class="section-title">Emails</h3>
+        <div class="ioc-grid">
+            {% if iocs.emails %}
+                {% for e in iocs.emails %}
+                    <div class="ioc-item">{{ e }}</div>
+                {% endfor %}
+            {% else %}
+                <div class="no-iocs">No emails detected.</div>
+            {% endif %}
+        </div>
+
+        <h3 class="section-title">File Paths</h3>
+        <div class="ioc-grid">
+            {% if iocs.files %}
+                {% for f in iocs.files %}
+                    <div class="ioc-item">{{ f }}</div>
+                {% endfor %}
+            {% else %}
+                <div class="no-iocs">No file paths detected.</div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="section-title">VERDICT</div>
+        <div class="code">{{ verdict }}</div>
+    </div>
+</div>
+
+{% endif %}
+
+</body>
+</html>

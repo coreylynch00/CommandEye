@@ -1,0 +1,149 @@
+/* -------------------------- Body -------------------------- */
+body {
+    font-family: Consolas, monospace;
+    margin: 20px;
+    background: #000;
+    color: #00ff9f;
+    font-size: 12px;
+}
+
+h1 {
+    color: #33ffcc;
+    text-shadow: 0 0 4px #00ffcc;
+}
+
+.centered {
+    text-align: center;
+}
+
+.subtitle {
+    color: #009f6f;
+    margin-bottom: 15px;
+}
+
+form input[type=text] {
+    width: 70%;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #0f6;
+    background: #001a00;
+    color: #00ff9f;
+}
+
+form button {
+    padding: 6px 12px;
+    font-size: 12px;
+    background: #003300;
+    color: #00ff9f;
+    border: 1px solid #0f6;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #004d00;
+    box-shadow: 0 0 5px #0f6;
+}
+
+/* -------------------------- Panels 2x2 Grid -------------------------- */
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.panel {
+    padding: 15px;
+    background: #001300;
+    border-left: 4px solid #00ff9f;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #0f6;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------------- Section Titles -------------------------- */
+.section-title {
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #0f6;
+    color: #33ffcc;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* -------------------------- Code Blocks -------------------------- */
+.code {
+    white-space: pre-wrap;
+    padding: 6px;
+    background: #000;
+    border-radius: 3px;
+    border: 1px solid #0f6;
+    color: #00ffbf;
+    font-size: 12px;
+}
+
+/* -------------------------- IOC Grid -------------------------- */
+.ioc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.ioc-item {
+    padding: 6px;
+    background: #000;
+    border: 1px solid #0f6;
+    border-radius: 4px;
+    color: #00ff9f;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.ioc-item:hover {
+    background: #001a00;
+    transform: translateX(2px);
+    box-shadow: 0 0 5px #0f6;
+}
+
+/* -------------------------- VT Button -------------------------- */
+.vt-button {
+    background: transparent;
+    border: 1px solid #00ff9f;
+    color: #00ff9f;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.vt-button:hover {
+    background: #00ff9f;
+    color: #000;
+    box-shadow: 0 0 8px #00ff9f;
+}
+
+/* -------------------------- No IOCs -------------------------- */
+.no-iocs {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+/* -------------------------- Horizontal Rule -------------------------- */
+hr {
+    border: none;
+    border-top: 1px dashed #0f6;
+    margin: 20px 0;
+}
