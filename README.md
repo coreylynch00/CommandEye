@@ -82,9 +82,9 @@ commandeye/
 │   └── index.html      # Frontend HTML
 │
 ├── static/
-│   └── styles.css      # CSS (matrix theme + VT hover glow)
+│   └── styles.css      # CSS
 │
-└── README.md           # This file
+└── README.md          
 ```
 
 ---
